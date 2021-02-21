@@ -1,0 +1,77 @@
+// モバイルファーストのため、モバイルのスタイルを記述
+body {
+    font-family: 'Shippori Mincho', serif;
+    background-color: #eceaea;
+
+    p {
+        margin: 0;
+    }
+}
+
+.font-title {
+    //サイトタイトルfont-size
+    font-size: 28px;
+}
+.font-heading {
+    //中見出しfont-size
+    font-size: 26px;
+}
+.font-s {
+    //font-size 小
+    font-size: 14px;
+}
+.small-heading {
+    //小見出し
+    text-align: center;
+
+    &::before {
+        content: ' - ';
+    }
+    &::after {
+        content: ' - ';
+    }
+}
+.mb-m {
+    margin-bottom: 25px !important;
+}
+
+.content-width {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.global-container {
+    & .web-title {
+        @extend .font-title;
+        @extend .mb-m;
+        padding: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    & .description {
+        @extend .content-width;
+        @extend .mb-m;
+
+        & > h2::after {
+            @extend .font-s;
+            content: ' このwebサイトについて';
+        }
+    }
+
+    & .parts {
+        @extend .content-width;
+
+        & > h2::after {
+            @extend .font-s;
+            content: ' 部品紹介';
+        }
+
+        &__box {
+            padding: 40px 0;
+            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

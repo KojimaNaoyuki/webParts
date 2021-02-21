@@ -1,0 +1,108 @@
+@charset "UTF-8";
+.side-come-out-btn {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  outline: none !important;
+  cursor: pointer;
+  padding: 0;
+  width: 100px;
+  height: 35px;
+  color: black;
+  border: solid 1px black;
+  background-color: transparent;
+  z-index: 0;
+}
+
+.side-come-out-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: -10;
+}
+
+.side-come-out-btn:hover {
+  color: white;
+}
+
+.side-come-out-btn:hover::before {
+  -webkit-transform: none;
+          transform: none;
+}
+
+body {
+  font-family: 'Shippori Mincho', serif;
+  background-color: #eceaea;
+}
+
+body p {
+  margin: 0;
+}
+
+.font-title, .global-container .web-title {
+  font-size: 28px;
+}
+
+.font-heading {
+  font-size: 26px;
+}
+
+.font-s, .global-container .description > h2::after, .global-container .parts > h2::after {
+  font-size: 14px;
+}
+
+.small-heading {
+  text-align: center;
+}
+
+.small-heading::before {
+  content: ' - ';
+}
+
+.small-heading::after {
+  content: ' - ';
+}
+
+.mb-m, .global-container .web-title, .global-container .description {
+  margin-bottom: 25px !important;
+}
+
+.content-width, .global-container .description, .global-container .parts {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.global-container .web-title {
+  padding: 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+.global-container .description > h2::after {
+  content: ' このwebサイトについて';
+}
+
+.global-container .parts > h2::after {
+  content: ' 部品紹介';
+}
+
+.global-container .parts__box {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=style.css.map */
