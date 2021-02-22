@@ -11,27 +11,40 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="web-title">My Web Style</h1>
+            <button class="drawer-meny-icon-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu-container">
+        <ul>
+            <li><a href="#description">description</a></li>
+            <li>
+                <a href="#parts">parts</a>
+                <ul>
+                    <li><a href="#button">button</a></li>
+                    <li><a href="#loader">loader</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
     <div class="global-container">
-        <header class="header">
-            <div class="header__inner">
-                <h1 class="web-title">My Web Style</h1>
-                <button class="drawer-meny-icon-burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </header>
-        
-        <section class="description pt-ll">
+        <section class="description pt-ll" id="description">
             <h2 class="font-heading mb-m">description</h2>
             <p>webサイトを形作る様々な部品を掲載</p>
             <p>ボタン、メニュー、画像表示など</p>
         </section>
 
-        <section class="parts">
+        <section class="parts" id="parts">
             <h2 class="font-heading mb-m">parts</h2>
-            <p class="small-heading mb-m">button</p>
+            <p class="small-heading mb-m" id="button">button</p>
             <div class="parts__box">
                 <!-- スライドして横から出てくるボタン -->
                 <button class="side-come-out-btn mb-l">click</button>
@@ -65,7 +78,7 @@
                 </dl>
             </div>
 
-            <p class="small-heading mb-m">loader</p>
+            <p class="small-heading mb-m" id="loader">loader</p>
             <div class="parts__box">
                 <!-- 縦棒のローダー -->
                 <div class="rod-animation-loader mb-l">
@@ -87,6 +100,7 @@
             </div>
         </section>
     </div>
+
     <script src="./scripts/libs/mobile-menu.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
