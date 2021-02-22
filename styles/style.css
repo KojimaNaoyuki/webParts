@@ -386,7 +386,7 @@ body ul {
   margin-bottom: 25px !important;
 }
 
-.mb-l, .global-container .parts__box {
+.mb-l, .global-container .parts__button-content, .global-container .parts__oader-content, .global-container .parts__box {
   margin-bottom: 40px !important;
 }
 
@@ -492,8 +492,16 @@ body ul {
   transition: background-color .6s;
 }
 
+.global-container .description {
+  max-width: 960px;
+}
+
 .global-container .description > h2::after {
   content: ' このwebサイトについて';
+}
+
+.global-container .parts {
+  max-width: 960px;
 }
 
 .global-container .parts > h2::after {
@@ -510,5 +518,23 @@ body ul {
 
 .global-container .parts__box:last-child {
   margin-bottom: 0 !important;
+}
+
+@media (min-width: 884px) {
+  .global-container .parts__button-content, .global-container .parts__loader-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .global-container .parts__box {
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,3 +6,7 @@
 @import './modules/rod-animation-loader';
 
 @import './breakpoints/base';
+
+@media (min-width: 884px) {
+    @import './breakpoints/pc';
+}

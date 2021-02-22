@@ -1,0 +1,13 @@
+.global-container {
+    & .parts {
+        &__button-content, &__loader-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+        &__box {
+            width: 30%;
+        }
+    }
+}

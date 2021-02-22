@@ -158,6 +158,7 @@ body {
     & .description {
         @extend .content-width;
         @extend .mb-m;
+        max-width: $maxWidth;
 
         & > h2::after {
             @extend .font-s;
@@ -168,10 +169,15 @@ body {
     & .parts {
         @extend .content-width;
         @extend .mb-m;
+        max-width: $maxWidth;
 
         & > h2::after {
             @extend .font-s;
             content: ' 部品紹介';
+        }
+
+        &__button-content, &__oader-content {
+            @extend .mb-l;
         }
 
         &__box {
