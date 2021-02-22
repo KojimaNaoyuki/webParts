@@ -1,0 +1,66 @@
+.move-slide-btn {
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    outline: none !important;
+    cursor: pointer;
+    padding: 0;
+    width: 100px;
+    height: 35px;
+    color: black;
+    border: solid 1px black;
+    background-color: transparent;
+    z-index: 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        transform: translateX(-100%);
+        z-index: -10;
+        opacity: 0.6;
+
+        animation: sk-move-slide-btn 4s;
+        animation-iteration-count: infinite;
+    }
+    &:hover {
+        animation: sk-move-slide-btn-vib .8s;
+        animation-iteration-count: infinite;
+    }
+}
+@keyframes sk-move-slide-btn {
+    0% {
+        transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(-60%);
+    }
+    50% {
+        transform: translateX(-30%);
+    }
+    70% {
+        transform: translateX(-70%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes sk-move-slide-btn-vib {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

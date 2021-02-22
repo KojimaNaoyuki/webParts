@@ -13,23 +13,81 @@
 <body>
     <div class="global-container">
         <header class="header">
-            <h1 class="web-title">My Web Style</h1>
+            <div class="header__inner">
+                <h1 class="web-title">My Web Style</h1>
+                <button class="drawer-meny-icon-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </header>
         
-        <section class="description">
-            <h2 class="font-heading">description</h2>
+        <section class="description pt-ll">
+            <h2 class="font-heading mb-m">description</h2>
             <p>webサイトを形作る様々な部品を掲載</p>
             <p>ボタン、メニュー、画像表示など</p>
         </section>
 
         <section class="parts">
-            <h2 class="font-heading">parts</h2>
-            <p class="small-heading">button</p>
+            <h2 class="font-heading mb-m">parts</h2>
+            <p class="small-heading mb-m">button</p>
             <div class="parts__box">
-                <!-- スライドして出てくるボタン -->
-                <button class="side-come-out-btn">click</button>
+                <!-- スライドして横から出てくるボタン -->
+                <button class="side-come-out-btn mb-l">click</button>
+                <dl class="parts__use-file">
+                    <dt>使用したscss</dt>
+                    <dd>_side-come-out-btn.scss</dd>
+                    <dt>使用したjavascript</dt>
+                    <dd>無し</dd>
+                </dl>
+            </div>
+
+            <div class="parts__box">
+                <!-- スライドして下から出てくるボタン -->
+                <button class="under-come-out-btn mb-l">click</button>
+                <dl class="parts__use-file">
+                    <dt>使用したscss</dt>
+                    <dd>_under-come-out-btn.scss</dd>
+                    <dt>使用したjavascript</dt>
+                    <dd>無し</dd>
+                </dl>
+            </div>
+
+            <div class="parts__box">
+                <!-- アニメーションしながら動くボタン -->
+                <button class="move-slide-btn mb-l">click</button>
+                <dl class="parts__use-file">
+                    <dt>使用したscss</dt>
+                    <dd>_move-slide-btn.scss</dd>
+                    <dt>使用したjavascript</dt>
+                    <dd>無し</dd>
+                </dl>
+            </div>
+
+            <p class="small-heading mb-m">loader</p>
+            <div class="parts__box">
+                <!-- 縦棒のローダー -->
+                <div class="rod-animation-loader mb-l">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <dl class="parts__use-file">
+                    <dt>使用したscss</dt>
+                    <dd>_rod-animation-loader.scss</dd>
+                    <dt>使用したjavascript</dt>
+                    <dd>無し</dd>
+                </dl>
             </div>
         </section>
     </div>
+    <script src="./scripts/libs/mobile-menu.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

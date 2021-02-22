@@ -22,7 +22,9 @@ body {
 }
 .small-heading {
     //小見出し
+    position: relative;
     text-align: center;
+    font-size: 20px;
 
     &::before {
         content: ' - ';
@@ -34,6 +36,12 @@ body {
 .mb-m {
     margin-bottom: 25px !important;
 }
+.mb-l {
+    margin-bottom: 40px !important;
+}
+.pt-ll {
+    padding-top: 100px !important;
+}
 
 .content-width {
     width: 90%;
@@ -41,12 +49,26 @@ body {
 }
 
 .global-container {
-    & .web-title {
-        @extend .font-title;
-        @extend .mb-m;
-        padding: 10px;
+    & .header {
+        position: fixed;
+        padding: 5px;
+        width: 100%;
+        z-index: 100;
         background-color: #ffffff;
         box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.3);
+
+        &__inner {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            & .web-title {
+                @extend .font-title;
+                margin: 0;
+                line-height: 58px;
+            }
+        }
+
     }
 
     & .description {
@@ -68,10 +90,17 @@ body {
         }
 
         &__box {
+            @extend .mb-l;
             padding: 40px 0;
             text-align: center;
             background-color: #ffffff;
             box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        &__use-file {
+            & > dd {
+                @extend .mb-m;
+            }
         }
     }
 }

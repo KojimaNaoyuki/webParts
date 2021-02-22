@@ -1,0 +1,30 @@
+$elementNum: 8; //span要素の数
+
+.rod-animation-loader {
+    & > span {
+        display: inline-block;
+        width: 4px;
+        height: 30px;
+        background-color: black;
+
+        animation: kf-rod-animation-loader 1.3s;
+        animation-iteration-count: infinite;
+
+        @for $i from 1 through $elementNum {
+            &:nth-child(#{$i}) {
+                animation-delay: 0.1s * $i;
+            }
+        }
+    }
+}
+@keyframes kf-rod-animation-loader {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.6);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
