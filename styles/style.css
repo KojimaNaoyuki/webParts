@@ -356,7 +356,7 @@ body ul {
   font-size: 26px;
 }
 
-.font-s, .global-container .description > h2::after, .global-container .parts > h2::after {
+.font-s, body p, .global-container .description > h2::after, .global-container .parts > h2::after {
   font-size: 14px;
 }
 

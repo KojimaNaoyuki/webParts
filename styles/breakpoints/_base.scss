@@ -6,6 +6,9 @@ body {
     p, a {
         margin: 0;
     }
+    p {
+        @extend .font-s;
+    }
     a {
         text-decoration: none;
 
