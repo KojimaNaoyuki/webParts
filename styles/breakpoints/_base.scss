@@ -1,7 +1,7 @@
 // モバイルファーストのため、モバイルのスタイルを記述
 body {
     font-family: 'Shippori Mincho', serif;
-    background-color: #eceaea;
+    background-color: $bgColor;
 
     p {
         margin: 0;
@@ -54,7 +54,7 @@ body {
         padding: 5px;
         width: 100%;
         z-index: 100;
-        background-color: #ffffff;
+        background-color: $headColor;
         box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.3);
 
         &__inner {
@@ -93,7 +93,7 @@ body {
             @extend .mb-l;
             padding: 40px 0;
             text-align: center;
-            background-color: #ffffff;
+            background-color: $boxColor;
             box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.2);
         }
 
