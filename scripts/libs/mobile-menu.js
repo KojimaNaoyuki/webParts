@@ -1,4 +1,4 @@
-export class MobileMenu {
+class MobileMenu {
     constructor() {
         console.log('class MobileMenu');
         this.DOM = {}; //DOM要素を格納するためのオブジェクト
