@@ -521,6 +521,36 @@ body ul {
 }
 
 @media (min-width: 884px) {
+  .mobile-menu-container > ul > li {
+    font-size: 26px;
+  }
+  .mobile-menu-container > ul > li > ul > li {
+    font-size: 20px;
+  }
+  .font-title, .header__inner .web-title {
+    font-size: 28px;
+  }
+  .font-heading {
+    padding-top: 70px;
+    margin-top: -70px;
+    font-size: 32px;
+  }
+  .font-s, body p, .global-container .description > h2::after, .global-container .parts > h2::after {
+    font-size: 16px;
+  }
+  .small-heading {
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 70px;
+    margin-top: -70px;
+  }
+  .small-heading::before {
+    content: ' - ';
+  }
+  .small-heading::after {
+    content: ' - ';
+  }
   .global-container .parts__button-content, .global-container .parts__loader-content {
     display: -webkit-box;
     display: -ms-flexbox;

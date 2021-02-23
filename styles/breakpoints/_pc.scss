@@ -1,3 +1,47 @@
+.mobile-menu-container {
+    & > ul {
+        & > li {
+            font-size: 26px;
+            & > ul {
+                & > li {
+                    font-size: 20px;
+                }
+                
+            }
+        }
+    }
+}
+
+.font-title {
+    //サイトタイトルfont-size
+    font-size: 28px;
+}
+.font-heading {
+    //中見出しfont-size
+    padding-top: 70px;
+    margin-top: -70px;
+    font-size: 32px;
+}
+.font-s {
+    //font-size 小
+    font-size: 16px;
+}
+.small-heading {
+    //小見出し
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 70px;
+    margin-top: -70px;
+
+    &::before {
+        content: ' - ';
+    }
+    &::after {
+        content: ' - ';
+    }
+}
+
 .global-container {
     & .parts {
         &__button-content, &__loader-content {
